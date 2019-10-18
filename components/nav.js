@@ -1,56 +1,75 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
 
-const links = [
-  { href: 'https://zeit.co/now', label: 'ZEIT' },
-  { href: 'https://github.com/zeit/next.js', label: 'GitHub' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+const headnav = () => (
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link href='/'>
-          <a>Home</a>
-        </Link>
-      </li>
-      {links.map(({ key, href, label }) => (
-        <li key={key}>
-          <a href={href}>{label}</a>
-        </li>
-      ))}
-    </ul>
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        HOME
+      </a>
 
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          ORDERS
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            ORDERS
+          </a>
+          <hr class="navbar-divider"/>
+          <a class="navbar-item">
+            PRE-ORDERS
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          PRODUCTS
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            STOCK
+          </a>
+          <hr class="navbar-divider"></hr>
+          <a class="navbar-item">
+            OUT-OF-STOCK
+          </a>
+        </div>
+      </div>
+
+      <a class="navbar-item">
+        CUSTOMERS
+      </a>
+      <a class="navbar-item ">
+        EMPLOYEES
+      </a>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong>Sign up</strong>
+          </a>
+          <a class="button is-light">
+            Log in
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
 )
 
-export default Nav
+export default headnav ;
