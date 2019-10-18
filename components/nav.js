@@ -1,7 +1,7 @@
 import React from 'react';
 
-const headnav = () => (
-  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+const HeadNav = () => (
+  <nav className="navbar is-primary" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
       <span aria-hidden="true"></span>
@@ -56,14 +56,15 @@ const headnav = () => (
       </a>
     </div>
 
-    <div class="navbar-end">
-      <div class="navbar-item">
+    <div class="navbar-end ">
+      <div class="navbar-item ">
+        <div className="user ">
+          <a>User: Lorem </a>
+        </div>
+
         <div class="buttons">
-          <a class="button is-primary">
-            <strong>Sign up</strong>
-          </a>
-          <a class="button is-light">
-            Log in
+          <a class="button is-danger is-rounded">
+            Logout
           </a>
         </div>
       </div>
@@ -72,4 +73,4 @@ const headnav = () => (
 </nav>
 )
 
-export default headnav ;
+export default HeadNav ;
