@@ -9,9 +9,10 @@ const Home = () => (
   <div className="body">
     <div className="nav">
       <HeadNav />
+      <br/>
     </div>
    
-    <div className="columns">
+    <div className="columns" style={{marginTop:"1.5%"}}>
       <div className="column" >
         <div className="column">
         <div className="columns is-mobile" style={{ position : "absolute", margin: "12px" }}>
