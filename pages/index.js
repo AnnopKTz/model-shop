@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/nav'
-import Test from '../components/test1'
 
 const Home = () => (
   <div>
@@ -9,7 +8,6 @@ const Home = () => (
       <title>Home</title>
       <link rel='icon' href='/favicon.ico' />
     </Head>
-    <Test  />
     <Nav />
 
     <div className='hero'>
