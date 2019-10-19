@@ -1,33 +1,192 @@
 import React from 'react';
 
 const Menu = () => (
-    <aside class="menu">
-        <p class="menu-label">
+    <aside className="menu">
+        <p className="menu-label">
             CARS
   </p>
-        <ul class="menu-list">
-            <li><a>Classic-Cars</a></li>
-            <li><a>Vintage Cars</a></li>
-            <li><a>Motocycles</a></li>
-            <li><a> Truck & Buses</a></li>
+        <ul className="menu-list">
+            <div className="dropdown">
+                <div className="dropdown-trigger">
+                    <button className="button " aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Classic-Cars</span>
+                        <span className="icon">
+                            <i className="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div className="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div className="dropdown-content">
+
+                        <a href="#" className="dropdown-item">
+                            Layout
+      </a>
+                        <hr className="dropdown-divider" />
+                        <a href="#" className="dropdown-item">
+                            More
+      </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="dropdown">
+                <div className="dropdown-trigger">
+                    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Vintage-Cars</span>
+                        <span className="icon is-small">
+                            <i className="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div className="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div className="dropdown-content">
+                        <a href="#" className="dropdown-item">
+                            Layout
+      </a>
+                        <hr className="dropdown-divider" />
+                        <a href="#" className="dropdown-item">
+                            More
+      </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="dropdown">
+                <div className="dropdown-trigger">
+                    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Motocycles</span>
+                        <span className="icon is-small">
+                            <i className="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div className="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div className="dropdown-content">
+
+                        <a href="#" className="dropdown-item">
+                            Layout
+      </a>
+                        <hr className="dropdown-divider" />
+                        <a href="#" className="dropdown-item">
+                            More
+      </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="dropdown">
+                <div className="dropdown-trigger">
+                    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Trucks & Buses</span>
+                        <span className="icon is-small">
+                            <i className="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div className="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div className="dropdown-content">
+                        <a href="#" className="dropdown-item">
+                            Layout
+      </a>
+                        <hr className="dropdown-divider" />
+                        <a href="#" className="dropdown-item">
+                            More
+      </a>
+                    </div>
+                </div>
+            </div>
+
         </ul>
-        <p class="menu-label">
+        <p className="menu-label">
             Trains
   </p>
-        <ul class="menu-list">
-            <li><a>.........</a></li>
+        <ul className="menu-list">
+            <div className="dropdown">
+                <div className="dropdown-trigger">
+                    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Trains</span>
+                        <span className="icon is-small">
+                            <i className="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div className="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div className="dropdown-content">
+
+                        <a href="#" className="dropdown-item">
+                            Layout
+      </a>
+                        <hr className="dropdown-divider" />
+                        <a href="#" className="dropdown-item">
+                            More
+      </a>
+                    </div>
+                </div>
+            </div>
+
         </ul>
-        <p class="menu-label">
+        <p className="menu-label">
             Planes
   </p>
-        <ul class="menu-list">
-            <li><a>.........</a></li>
+        <ul className="menu-list">
+            <div className="dropdown">
+                <div className="dropdown-trigger">
+                    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Planes</span>
+                        <span className="icon is-small">
+                            <i className="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div className="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div className="dropdown-content">
+
+                        <a href="#" className="dropdown-item">
+                            Layout
+      </a>
+                        <hr className="dropdown-divider" />
+                        <a href="#" className="dropdown-item">
+                            More
+      </a>
+                    </div>
+                </div>
+            </div>
+
         </ul>
-        <p class="menu-label">
+        <p className="menu-label">
             Ships
   </p>
-        <ul class="menu-list">
-            <li><a>.........</a></li>
+        <ul className="menu-list">
+            <div className="dropdown">
+                <div className="dropdown-trigger">
+                    <button className="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                        <span>Ships</span>
+                        <span className="icon is-small">
+                            <i className="fas fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <div className="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div className="dropdown-content">
+
+                        <a href="#" className="dropdown-item">
+                            Layout
+      </a>
+                        <hr className="dropdown-divider" />
+                        <a href="#" className="dropdown-item">
+                            More
+      </a>
+                    </div>
+                </div>
+            </div>
+
         </ul>
     </aside>
 )
