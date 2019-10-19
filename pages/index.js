@@ -15,18 +15,18 @@ const Home = () => (
         <br/>
     </div>
     <div className="columns is-mobile">
-      <div class="column is-2 ">
+      <div class="column is-3 ">
         <Category />
       </div>
       
       <div class="columns is-mobile">
-        <div class="column is-4">
+        <div class="column is-3">
           <Item />
         </div>
-        <div class="column is-4">
+        <div class="column is-3">
           <Item />
         </div>
-        <div class="column is-4">
+        <div class="column is-3">
           <Item />
         </div>
       </div>

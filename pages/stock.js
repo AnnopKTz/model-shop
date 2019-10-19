@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from '../components/nav';
+import Table from '../components/stock_table';
 
 const Stock = () => (
     <div>
@@ -19,6 +20,14 @@ const Stock = () => (
                     <li><a>Planes</a></li>
                     <li><a>Ships</a></li>
                 </ul>
+            </div>
+            <div className="columns is-mobile">
+                <div className="column is-1">
+
+                </div>
+                <div className="column is-10">
+                    <Table />
+                </div>
             </div>
         </div>
     </div>
