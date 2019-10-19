@@ -10,28 +10,43 @@ const Home = () => (
     <div className="nav">
       <HeadNav />
     </div>
-    <div>
+   
+    <div className="columns">
+      <div className="column" >
+        <div className="column">
+        <div className="columns is-mobile" style={{ position : "absolute", margin: "12px" }}>
+          <div class="column ">
+            <Category />
+          </div>
+        </div>
+        </div>
+    
+      <div className="column"style={{ paddingLeft: "200px", margin: "0px" }}>
+      <div className="columns" >
+      <div className="column">
         <Search_bar />
-        <br/>
-    </div>
-    <div className="columns is-mobile">
-      <div class="column is-3 ">
-        <Category />
-      </div>
-      
-      <div class="columns is-mobile">
-        <div class="column is-3">
-          <Item />
-        </div>
-        <div class="column is-3">
-          <Item />
-        </div>
-        <div class="column is-3">
-          <Item />
-        </div>
       </div>
     </div>
+        <div className="columns is-mobile" style={{ margin: "20px" }}>
+          <div class="column ">
+            <Item />
+          </div>
+          <div class="column ">
+            <Item />
+          </div>
+          <div class="column">
+            <Item />
+          </div>
+          <div class="column">
+            <Item />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div >
   </div>
+
+
 
 )
 

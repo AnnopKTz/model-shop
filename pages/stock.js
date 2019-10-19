@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../components/nav';
 import Table from '../components/stock_table';
 
+
 const Stock = () => (
     <div>
         <div className="nav">
