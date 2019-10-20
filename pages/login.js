@@ -1,5 +1,4 @@
 import React from 'react'
-import Fr_lg from '../components/from_login'
 
 const HOME = () => {
     return (
