@@ -9,7 +9,7 @@ const Menu = () => (
                         <p class="title is-centered" style={{fontSize: "25px"}}>CATALOG</p>
                     </div>
                 </div>
-        <hr style={{margin: "0px",}} />
+        <hr style={{margin: "0",}} />
             <div className="columns">
                 <div className="column " style={{margin: "5px"}}>
                     <button className="button is-fullwidth">Classic-Cars</button>

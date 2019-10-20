@@ -19,47 +19,47 @@ const Nav = () => (
     <div class="navbar-end">
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <a class="navbar-item" style={{color:"white"}}>
+          <a class="navbar-item" Link href="/index" style={{color:"white"}}>
             HOME
       </a>
         </div>
       </div>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/" style={{color:"white"}}>
+        <a class="navbar-link" Link href="/order" style={{color:"white"}}>
           ORDERS
         </a>
         <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+          <a class="navbar-item" Link href="/order">
             ORDERS
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+          <a class="navbar-item" Link href="/order">
             PRE-ORDERS
           </a>
         </div>
       </div>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link" href="https://bulma.io/documentation/overview/start/" style={{color:"white"}}>
+        <a class="navbar-link" Link href="/stock" style={{color:"white"}}>
           PRODUCTS
         </a>
         <div class="navbar-dropdown is-boxed">
-          <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
+          <a class="navbar-item"Link href="/stock">
             STOCK
           </a>
-          <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
+          <a class="navbar-item" Link href="/stock">
             OUT-OF-STOCKS
           </a>
         </div>
       </div>
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" style={{color:"white"}}>
+            <a class="navbar-item" Link href="/customer" style={{color:"white"}}>
               CUSTOMERS
       </a>
           </div>
         </div>
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-start">
-            <a class="navbar-item" style={{color:"white"}}>
+            <a class="navbar-item" Link href="/customer"style={{color:"white"}}>
               EMPLOYEES
       </a>
           </div>
@@ -68,7 +68,7 @@ const Nav = () => (
           <figure class="image is-48x48" style={{ marginLeft: "15px" }}>
             <img class="is-rounded" src="../static/asset/user.png" />
           </figure>
-          <button class="button is-danger is-rounded is-small">LOGOUT</button>
+          <button class="button is-danger is-rounded is-small" Link href="/login">LOGOUT</button>
         </div>
       
     </div>
