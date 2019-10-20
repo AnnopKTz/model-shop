@@ -1,10 +1,3 @@
-## Simple User Registration and Login functionality with React, NodeJs, ExpressJs and MongoDB
-
-### Login Screen
-![Login screen](./images/login.png)
-
-### Sign up Screen
-![Sign up screen](./images/signup.png)
 
 ## UI
 
@@ -25,20 +18,11 @@ The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
 
-## API
+## in API Folder
 
-Checkout to api directory then you can run:
+`npm install`
 
-### `nodemon server`
+### `node server.js`
 
 Runs the node server and page will reload if you make any edits
 
-## Database
-
-### `brew services start mongodb`
-
-This will start the mongodb service
-
-### `mongod --port 27018`
-
-Runs mongod on 27018 port
